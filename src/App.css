@@ -1,0 +1,21 @@
+.gradient-text{
+    background: linear-gradient(115deg, #8C00EE,#FF006D, #FF9E6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 1.4px #332);
+}
+
+.gradient-text-light{
+    background: linear-gradient(90deg, #8C00EE,#FF006D, #FF9E6F, #FF9E6F,#F78800, #F78800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-background{
+    background: linear-gradient(90deg, #8C00EE,#FF006D,#F78800);
+}
+
+.glassmorphism{
+    background: rgba( 0, 0, 0, 0.58 );
+    backdrop-filter: blur( 0.5px );
+}

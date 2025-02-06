@@ -1,0 +1,19 @@
+/* #gradient-text {
+  background: -webkit-linear-gradient(115deg,#FCA516,#FCA516,#F75A88,#9761F7,#9761F7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  } */
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(17px); /* Adjust the float height here */
+    }
+  }
+  
+  .float-icon {
+    animation: float 3s ease-in-out infinite; /* Adjust the duration for the floating effect */
+  }
+  
