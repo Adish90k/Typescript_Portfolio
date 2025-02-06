@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   motion,
   useTransform,
@@ -37,7 +37,9 @@ export const AnimatedTooltip = ({
 
   return (
     <div className="flex items-center flex-wrap justify-start mt-10 pl-20 mb-20 w-[100%]">
-      {items.map((item, idx) => (
+      {items.map((item) => (
+        
+        
         <div
           className="mr-[40px] relative mt-6" 
           key={item.name}
