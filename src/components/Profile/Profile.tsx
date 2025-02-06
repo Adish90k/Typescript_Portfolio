@@ -1,5 +1,5 @@
 import React from "react";
-import Profilepic from "../../assets/landingbg.png";
+import Profilepic from "../../assets/profileimage.jpeg";
 import "../../index.css";
 import Contact from "./Contact";
 // import { SparklesCore } from "../ui/sparkles";
@@ -12,11 +12,16 @@ const Profile: React.FC = () => {
     <div className="max-sm:flex-wrap max-sm:h-[100%] bg-black text-white h-[70vh] flex" id="Profilecontainer">
       <div className="w-1/2 max-sm:w-[100%] h-[100%]  flex flex-col justify-center items-center max-sm:pt-4">
         <div className="w-1/2 max-sm:w-[100%] ml-[-80px] max-sm:ml-0 max-sm:pl-[35vw]">
-          <img
-            src={Profilepic}
-            alt="profile pic"
-            className="rounded-[50%] w-[130px] h-[130px]"
-          />
+        <img
+  src={Profilepic}
+  alt="profile pic"
+  className="rounded-[50%] w-[100px] h-[100px]"
+  style={{ 
+    objectFit: "cover", 
+    objectPosition: "center", 
+    transform: "scale(1.5)"  
+  }}  
+/>
         </div>
         <div className="flex flex-col mt-8 max-sm:items-center">
           <h3 className="font-dm-sans text-6xl">Hi, I'm Adish,</h3>

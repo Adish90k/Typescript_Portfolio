@@ -1,5 +1,5 @@
 import React from 'react';
-import cardimg from "../../assets/landingbg.png"
+import cardimg from "../../assets/geochat-main.png"
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
 

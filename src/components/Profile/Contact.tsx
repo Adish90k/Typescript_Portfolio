@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className='w-[100%] flex justify-center items-end flex-col pr-20  max-sm:pr-0 max-sm:m-5'>
+    <div className='w-[100%] flex justify-center items-end flex-col pr-20  max-sm:pr-0 max-sm:m-5' id='Contactcontainer'>
       <div className='bg-black p-4 border-2 border-zinc-500 h-[75%] w-[50%] rounded-xl max-sm:w-[100%] max-sm:h-[100%] '>
       <form onSubmit={handleSubmit} className='flex flex-col justify-evenly h-[100%]'>
         <label>Name</label>
