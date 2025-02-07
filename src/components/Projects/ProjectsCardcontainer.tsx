@@ -28,11 +28,11 @@ const ProjectsCardcontainer:React.FC = () => {
       <div className="flex justify-between items-center mt-5">
         <CardItem
           translateZ={20}
-          href="https://twitter.com/mannupaaji"
           target="__blank"
           className="px-4 py-2 rounded-xl font-normal cursor-pointer text-white"
         >
-          Live Soon →
+          <a href="https://geochat-web.netlify.app/">Live→</a>
+        
         </CardItem>
         <CardItem
           translateZ={20}
