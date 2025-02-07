@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     try {
       const response = await fetch('https://formspree.io/f/mannokov', {
         method: 'POST',
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
         setStatus('Your message has been sent successfully!');
       } else {
@@ -42,7 +42,12 @@ const Contact: React.FC = () => {
       setStatus('Network error occurred.');
       console.error(error);
     }
+
+    setTimeout(() => {
+      setStatus('');
+    }, 2000);
   };
+  
 
   return (
     <div className='w-[100%] flex justify-center items-end flex-col pr-20  max-sm:pr-0 max-sm:m-5' id='Contactcontainer'>
@@ -85,7 +90,7 @@ const Contact: React.FC = () => {
         className="font-dm-sans w-[160px] h-[40px] rounded-2xl mt-3 flex justify-center items-center gradient-background active:opacity-[50%]"
         >Send Message</button>
       </form>
-      {status && <p className='mt-8 '>{status}</p>}
+      {status && <p className='mt-8'>{status}</p>}
 
 
       </div>
